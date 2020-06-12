@@ -1,18 +1,23 @@
 # crystal-xkcd-grabber
+a simple CLI tool to grab XKCD comics, written in [Crystal programming language](https://crystal-lang.org/)
 
-TODO: Write a description here
+inspired from
+https://eryb.space/2020/05/27/diving-into-go-by-building-a-cli-applica
+tion.html
 
-## Installation
 
-TODO: Write installation instructions here
+# usage:
 
-## Usage
+```
+$ ./crystal-xkcd-grabber --help
+Usage: ./xkcd-grabber [OPTION...]
 
-TODO: Write usage instructions here
+        -n, --number INT             The comic number to download. Default is latest
+        -s, --save                   When specified, download and save the comic to disk
+        -h, --help                   Show this help
+```
 
-## Development
-
-TODO: Write development instructions here
+## work in progress
 
 ## Contributing
 
@@ -24,4 +29,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [your-name-here](https://github.com/your-github-user) - creator and maintainer
+- [ilmanzo](https://github.com/ilmanzo) - creator and maintainer
