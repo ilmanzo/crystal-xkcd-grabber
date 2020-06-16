@@ -14,14 +14,13 @@ OptionParser.parse do |parser|
   parser.on("-h", "--help", "Show this help") { puts parser }
 end
 
-client=Xkcd_Client.new number
+client = Xkcd_Client.new number
 
 puts "Comic info:"
 puts "Date:  #{client.date}"
 puts "Title: #{client.safe_title}"
 puts "Alt:   #{client.alt}"
-if save 
-  fname=client.saveToDisk
+if save
+  fname = client.saveToDisk
   puts "saved to disk: #{fname}"
 end
-
